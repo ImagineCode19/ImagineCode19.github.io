@@ -1,0 +1,35 @@
+<div id="comitee" class="container mb-5">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h1 class="card-title mb-4 font-weight-bold">Organizadores</h1>
+            <div class="flex-container flex-center">
+                {% for person in page.comitee %}
+                {% if person.photo and person.hide != true %}
+                <div class="person">
+                    <img class="photo" width="5%" data-defer-src="{{ site.baseurl }}{{ person.photo }}" alt="{{person.name}}"/>
+                    <div class="social-network">
+                        {% if person.twitter %}
+                        <a class="twitter" href="http://twitter.com/{{person.twitter}}" target="blank">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>&nbsp;
+                        {% endif %}
+                        {% if person.linkedin %}
+                        <a class="linkedin" href="http://linkedin.com/in/{{person.linkedin}}" target="blank">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>&nbsp;
+                        {% endif %}
+                        {% if person.github %}
+                        <a class="github" href="http://github.com/{{person.github}}" target="blank">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        {% endif %}
+                        <br />
+                        <h5>{{ person.name }}</h5>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

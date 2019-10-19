@@ -1,0 +1,148 @@
+<div id="schedule" class="container mb-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h1 class="card-title mb-4 font-weight-bold">Horario</h1>
+                <div class="card-body">
+                    <div class="cd-schedule loading">
+                        <div class="timeline" data-timeline-delta="01:00">
+                            <ul>
+                                {% for hour in page.schedule_hours %}
+                                    <li><span>{{hour}}:00</span></li>
+                                {% endfor %}
+                                <li><span>00:00</span></li>
+                            </ul>
+                        </div> <!-- .timeline -->
+
+                        <div class="events">
+                            <ul>
+                                <li class="events-group">
+                                    <div class="top-info"><span>Viernes</span></div>
+
+                                    <ul>
+                                        <li class="single-event" data-start="18:00" data-end="20:00" data-event="event-generic">
+                                            <a>
+                                                <em class="event-name">Check-in</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="20:00" data-end="22:00" data-event="event-generic">
+                                            <a>
+                                                <em class="event-name">Ceremonia apertura</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="22:00" data-end="23:00"  data-event="event-food" data-body="aaaa">
+                                            <a>
+                                                <em class="event-name">Cena</em>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="events-group">
+                                    <div class="top-info"><span>Sábado</span></div>
+
+                                    <ul>
+                                        <li class="single-event" data-start="08:00" data-end="09:00" data-event="event-food">
+                                            <a>
+                                                <em class="event-name">Desayuno</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="10:00" data-end="11:00" data-event="event-unknown">
+                                            <a>
+                                                <em class="event-name">???</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="11:00" data-end="13:00" data-event="event-tournament">
+                                            <a>
+                                                <em class="event-name">Torneo de futbolín</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="13:00" data-end="14:00"  data-event="event-unknown">
+                                            <a>
+                                                <em class="event-name">???</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="14:00" data-end="15:00" data-event="event-food">
+                                            <a>
+                                                <em class="event-name">Comida</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="16:00" data-end="17:00"  data-event="event-unknown">
+                                            <a>
+                                                <em class="event-name">???</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="17:00" data-end="20:00"  data-event="event-tournament">
+                                            <a>
+                                                <em class="event-name">Torneo de futbolín</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="20:00" data-end="21:00"  data-event="event-presentations">
+                                            <a>
+                                                <em class="event-name">Presentaciones IC Starter</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="21:00" data-end="22:00"  data-event="event-food">
+                                            <a>
+                                                <em class="event-name">Cena</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="22:00" data-end="23:00" data-event="event-generic">
+                                            <a>
+                                                <em class="event-name">Clausura IC Starter y entrega del premio</em>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="events-group">
+                                    <div class="top-info"><span>Domingo</span></div>
+
+                                    <ul>
+
+                                        <li class="single-event" data-start="01:00" data-end="03:00" data-event="event-unknown">
+                                            <a>
+                                                <em class="event-name">???</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="08:00" data-end="09:00" data-event="event-food">
+                                            <a>
+                                                <em class="event-name">Desayuno</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="09:30" data-end="12:00" data-event="event-presentations">
+                                            <a>
+                                                <em class="event-name">Presentaciones IC Challenge</em>
+                                            </a>
+                                        </li>
+
+                                        <li class="single-event" data-start="12:00" data-end="13:30" data-event="event-generic">
+                                            <a>
+                                                <em class="event-name">Ceremonia de clausura y entrega de premios</em>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div> <!-- .cd-schedule -->
+                    <div style="width:200px" class="mx-auto mb-2 mt-5">
+                        <a href="/inscripcion"><button class="inscription-btn"><h4 class="font-weight-bold">¡Click para apuntarme!</h4></button></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
